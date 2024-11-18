@@ -72,7 +72,7 @@ if (isset($_POST['addcart'])) {
 					<div style="">
 						<h3 style="font-size: 25px; font-weight: bold; ">'.$pName.'</h3><hr>
 						<h3 style="padding: 20px 0 0 0; font-size: 20px;">Price: $ '.$price.'</h3><hr>
-						<h3 style="padding: 20px 0 0 0; font-size: 22px; ">Stock :'.$piece.'</h3>
+						<h3 style="padding: 20px 0 0 0; font-size: 22px; ">Stock :'.$available.'</h3>
 						<h3 style="padding: 20px 0 0 0; font-size: 22px; ">Description:</h3>
 						<p>
 							'.$description.'

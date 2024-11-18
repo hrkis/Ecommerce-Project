@@ -177,15 +177,15 @@ if(isset($_POST['activate'])){
 											</td>
 										</div>
 										<div>
-											<input name="login" class="uisignupbutton signupbutton" type="submit" value="Log In">
+											<input name="login" class="uisignupbutton signupbutton" type="submit" value="Log In" style="color:#000;">
 										</div>
 										';
 											}
 										  ?>
 										<div style="float: right;">
-											<a class="forgetpass" href="forgetpass.php">
+											<!-- <a class="forgetpass" href="forgetpass.php">
 												<span>forget your password???</span>
-											</a>
+											</a> -->
 										</div>
 										<div class="signup_error_msg">
 											<?php 

@@ -205,7 +205,7 @@ $_POST['last_name'] = trim($_POST['last_name']);
 														</td>
 													</div>
 													<div>
-														<input name="signup" class="uisignupbutton signupbutton" type="submit" value="Sign Me Up!">
+														<input name="signup" class="uisignupbutton signupbutton" type="submit" value="Sign Me Up!" style="color:#000;">
 													</div>
 													<div class="signup_error_msg">';
 														

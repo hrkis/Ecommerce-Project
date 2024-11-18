@@ -21,6 +21,20 @@ http://localhost/ecommerce/admin/all_customer.php
 http://localhost/ecommerce/admin/newadmin.php
 
 
+
+Other User Login details:
+
+1) User Login Page
+http://localhost/ecommerce/login.php
+testdelivery@yopmail.com
+Test@123#
+2) User registeration pages
+http://localhost/ecommerce/signin.php
+3) Product Category Pages
+http://localhost/ecommerce/index.php
+4) All Product with same category
+http://localhost/ecommerce/OurProducts/acme.php
+
 ## Platform Used
 ### Front-End
   (i) HTML5 <br>
