@@ -200,7 +200,7 @@ $del = $_POST['Delivery'];
 										$item = $row1['item'];
 										$category = $row1['category'];
 										/* This code is responsible for R01 to The initial offer will be “buy one red widget, get the second half price”.*/
-										if($pId==77 && $quantity>=2){
+										if($pCode=='R01' && $quantity>=2){
 											$final_price = ($price / 2) + (($quantity - 1) * $price);
 											$total += $final_price; // Add discounted total to the final total
 										}else{
