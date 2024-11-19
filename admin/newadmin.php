@@ -140,7 +140,7 @@ $search_value = "";
 					<?php 
 						if ($user!="") {
 							//echo '<a style="text-decoration: none; color: #fff;" href="update_admin.php">Hi '.$uname_db. '<span style="color: #de2a74"> &nbsp;' . $utype_db.'</span></a>';
-							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';
+							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #fff">'. $utype_db.'</span></a>';
 
 						}
 						else {
@@ -175,7 +175,7 @@ $search_value = "";
 					<?php 
 						if($utype_db == 'admin'){
 							echo '<th><a href="report.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">Products</a></th>
-								<th><a href="newadmin.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">New Admin</a></th>';
+								<th><a href="newadmin.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">New Admin</a></th>';
 						}
 					?>
 
@@ -228,8 +228,7 @@ $search_value = "";
 													</div>
 													<div>
 														<td>
-															<select name="admintype" required="required" style=" font-size: 20px;
-														font-style: italic;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;border: 1px solid #169E8F;color: #169E8F;margin-left: 0;width: 300px;background-color: transparent;" class="">
+															<select name="admintype" required="required" style=" font-size: 20px;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;margin-left: 0;width: 300px;background-color: transparent;" class="">
 																<option selected value="admin">Admin</option>
 															</select>
 														</td>

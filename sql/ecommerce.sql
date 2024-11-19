@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2024 at 01:04 PM
+-- Generation Time: Nov 19, 2024 at 08:18 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -60,21 +60,6 @@ CREATE TABLE `cart` (
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `uid`, `pid`, `quantity`) VALUES
-(11, 2, 12, 0),
-(12, 0, 46, 0),
-(15, 43, 47, 0),
-(19, 42, 54, 0),
-(20, 42, 53, 0),
-(21, 0, 47, 0),
-(22, 0, 99, 0),
-(23, 46, 81, 0),
-(27, 47, 77, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -93,13 +78,6 @@ CREATE TABLE `orders` (
   `ddate` date NOT NULL,
   `delivery` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `uid`, `pid`, `quantity`, `oplace`, `mobile`, `dstatus`, `odate`, `ddate`, `delivery`) VALUES
-(90, 47, 78, 2, 'Tesrt', '7845123698', 'no', '2024-11-18', '0000-00-00', 'Express Delivery +100php upon ');
 
 -- --------------------------------------------------------
 
@@ -128,8 +106,7 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`id`, `pName`, `price`, `piece`, `description`, `available`, `category`, `type`, `item`, `pCode`, `picture`) VALUES
 (77, 'Red Widget\n', '32.95', 8, 'Red Widget\n', 100, '', '', 'acme', 'R01', 'test1234.png'),
 (78, 'Green Widget\n', '24.95', 6, 'Green Widget\n', 100, '', '', 'acme', 'G01', 'test1234.png'),
-(79, 'Blue Widget', '7.95', 6, 'Blue Widget', 101, '', '', 'acme', 'B01', 'test1234.png'),
-(106, 'Testkis', '15', 0, 'Tests', 100, '', '', 'acme', 'R01', '1731930193.png');
+(79, 'Blue Widget', '7.95', 6, 'Blue Widget', 102, '', '', 'acme', 'B01', 'test1234.png');
 
 -- --------------------------------------------------------
 
@@ -154,7 +131,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `firstName`, `lastName`, `email`, `mobile`, `address`, `password`, `confirmCode`, `activation`) VALUES
-(47, 'Test', 'Test', 'testdelivery@yopmail.com', '7845123698', 'Tesrt', 'd3e1fe90c3fdcd741c0ecb03e2cce39b', '0', 'yes');
+(47, 'Test', 'Test', 'testdelivery@yopmail.com', '7845123698', 'Tesrt', 'd3e1fe90c3fdcd741c0ecb03e2cce39b', '0', 'yes'),
+(48, 'Test', 'Testkis', 'testdeveloperkis@yopmail.com', '7845123698', 'test', 'd3e1fe90c3fdcd741c0ecb03e2cce39b', '0', 'yes');
 
 --
 -- Indexes for dumped tables
@@ -204,13 +182,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -222,7 +200,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

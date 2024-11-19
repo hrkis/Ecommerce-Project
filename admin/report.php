@@ -41,7 +41,7 @@ else {
 					<?php 
 						if ($user!="") {
 							//echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.'</br><span style="color: #de2a74">'.$utype_db.'</span></a>';
-							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';
+							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #fff;">'. $utype_db.'</span></a>';
 
 						}
 						else {
@@ -76,8 +76,8 @@ else {
 			
 					<?php 
 						if($utype_db == 'admin'){
-							echo '<th><a href="report.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">Products</a></th>
-								<th><a href="newadmin.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">New Admin</a></th>';
+							echo '<th><a href="report.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">Products</a></th>
+								<th><a href="newadmin.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">New Admin</a></th>';
 						}
 					?>
 
@@ -92,7 +92,7 @@ else {
 						<div class="settingsleftcontent">
 							<ul>
 								<ul>
-								<li><?php echo '<a href="report.php" style=" background-color: #169e8f; border-radius: 4px; color: #fff;" >List Of Products</a>'; ?></li>
+								<li><?php echo '<a href="report.php" style=" background-color: #000; border-radius: 4px; color: #fff;" >List Of Products</a>'; ?></li>
 								<li><?php echo '<a href="all_customer.php" >All Customers</a>'; ?></li>
 							</ul>
 							</ul>
@@ -101,7 +101,7 @@ else {
 					<li style="background-color: #fff;margin-top:30px;">
 						<div>
 							<table class="rightsidemenu">
-								<tr style="font-weight: bold;" colspan="10" bgcolor="#4DB849">
+								<tr style="font-weight: bold;color:#fff;" colspan="10" bgcolor="#000">
 									<th>Id</th>
 									<th>P Name</th>
 									<th>Description</th>

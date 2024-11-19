@@ -57,7 +57,6 @@ if (isset($_POST['addcart'])) {
 <body>
 	<?php include ( "../inc/mainheader.inc.php" ); ?>
 	<div class="categolis">
-		
 	</div>
 	<div style="margin: 0 97px; padding: 10px">
 
@@ -68,7 +67,7 @@ if (isset($_POST['addcart'])) {
 					<img src="../image/product/'.$picture.'" style="height: 500px; width: 500px; padding: 2px; border: 2px solid #c7587e;">
 				</div>
 				</div>
-				<div style="float: right;width: 40%;color: #067165;background-color: #ddd;padding: 10px;">
+				<div style="float: right;width: 40%;color: #000;background-color: #ddd;padding: 10px;">
 					<div style="">
 						<h3 style="font-size: 25px; font-weight: bold; ">'.$pName.'</h3><hr>
 						<h3 style="padding: 20px 0 0 0; font-size: 20px;">Price: $ '.$price.'</h3><hr>

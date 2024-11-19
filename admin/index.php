@@ -41,7 +41,7 @@ $search_value = "";
 				<div class="uiloginbutton signinButton loginButton" style="">
 					<?php 
 						if ($user!="") {
-							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';
+							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #fff">'. $utype_db.'</span></a>';
 						}
 						else {
 							echo '<a style="text-decoration: none;color: #fff;" href="login.php">LOG IN</a>';
@@ -68,7 +68,7 @@ $search_value = "";
 			<table>
 				<tr>
 					<th>
-						<a href="index.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">Home</a>
+						<a href="index.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">Home</a>
 					</th>
 					<th><a href="addproduct.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">Add Product</a></th>
 					

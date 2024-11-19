@@ -99,7 +99,7 @@ $search_value = "";
 				<div class="uiloginbutton signinButton loginButton">
 					 <?php 
 						if ($user!="") {
-							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';						}
+							echo '<a style="text-decoration: none;color: #fff;" href="update_admin.php">Hi '.$uname_db.' <span style="color: #fff;">'. $utype_db.'</span></a>';						}
 						else {
 							echo '<a style="text-decoration: none; color: #fff;" href="login.php">LOG IN</a>';
 						}
@@ -127,7 +127,7 @@ $search_value = "";
 					<th>
 						<a href="index.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">Home</a>
 					</th>
-					<th><a href="addproduct.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">Add Product</a></th>
+					<th><a href="addproduct.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">Add Product</a></th>
 					
 					<th><a href="orders.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">Orders</a></th>
 			
@@ -172,7 +172,7 @@ $search_value = "";
   											<h5>Price:</h5>
   											</div>
 												<td >
-												<input name="price" style="margin-left: 180px; id="last_name" required="required" class="last_name signupbox" type="text" size="30" value="'.$price.'" >
+												<input name="price" style="margin-left: 152px; id="last_name" required="required" class="last_name signupbox" type="text" size="30" value="'.$price.'" >
 												</td>
 											</div></br>
 
@@ -212,13 +212,12 @@ $search_value = "";
 											<div class="label_content1" style="float: left;">
   											<h5>Product Image:</h5>
   											</div>
-											<input name="profilepic"style=" font-size: 20px;
-														font-style: italic;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;border: 1px solid #169E8F;color: #169E8F;margin-left: 152px;width: 270px;background-color: transparent;" class="password signupbox" type="file" value="Add Pic">
+											<input name="profilepic"style=" font-size: 20px;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;border: 1px solid #000;color: #000;margin-left: 48px;width: 270px;background-color: transparent;" class="password signupbox" type="file" value="Add Pic">
 											</div></br>
 
 
 											<div>
-											<input name="signup"  style=" font-size: 20px;font-style: italic;color:#000! important;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;border: 1px solid #169E8F;color: #ffff;margin-left: 260px;width: 304px;background-color: transparent;" class="uisignupbutton signupbutton" type="submit" value="Add Product">
+											<input name="signup"  style=" font-size: 20px;color:#000! important;margin-bottom: 3px;margin-top: 0px;padding: 14px;line-height: 25px;border-radius: 4px;border: 1px solid #000;color: #ffff;margin-left: 260px;width: 304px;background-color: transparent;" class="uisignupbutton signupbutton" type="submit" value="Add Product">
 											</div>
 											</div>
 											</form>

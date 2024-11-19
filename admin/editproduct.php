@@ -152,7 +152,7 @@ $search_value = "";
 					<?php 
 						if ($user!="") {
 							//echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.'</br><span style="color: #de2a74">'.$utype_db.'</span></a>';
-							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';
+							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #fff;">'. $utype_db.'</span></a>';
 
 						}
 						else {
@@ -187,7 +187,7 @@ $search_value = "";
 			
 					<?php 
 						if($utype_db == 'admin'){
-							echo '<th><a href="report.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">Products</a></th>
+							echo '<th><a href="report.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">Products</a></th>
 								<th><a href="newadmin.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">New Admin</a></th>';
 						}
 					?>

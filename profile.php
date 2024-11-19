@@ -83,8 +83,6 @@ $search_value = "";
 					<th>
 						<?php echo '<a href="profile.php?uid='.$user.'" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">My Orders</a>'; ?>
 					</th>
-					<th><?php echo '<a href="settings.php?uid='.$user.'" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #fff;border-radius: 12px;font-size: 15px;">Settings</a>'; ?></th>
-					
 
 				</tr>
 			</table>
@@ -98,7 +96,7 @@ $search_value = "";
 					<div>
 						<div>
 							<table class="rightsidemenu">
-								<tr style="font-weight: bold;" colspan="10" bgcolor="#3A5487">
+								<tr style="font-weight: bold;color: #fff;" colspan="10" bgcolor="#3A5487">
 									<th>Product Name</th>
 									<th>Price</th>
 									<th>Total Product</th>

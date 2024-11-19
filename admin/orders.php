@@ -37,7 +37,7 @@ else {
 				<div class="uiloginbutton signinButton loginButton">
 					<?php 
 						if ($user!="") {
-							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #010a0e">'. $utype_db.'</span></a>';
+							echo '<a style="text-decoration: none;color: #fff;" href="login.php">Hi '.$uname_db.' <span style="color: #fff;">'. $utype_db.'</span></a>';
 						}
 						else {
 							echo '<a style="text-decoration: none;color: #fff;" href="login.php">LOG IN</a>';
@@ -68,7 +68,7 @@ else {
 					</th>
 					<th><a href="addproduct.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;font-size: 15px;">Add Product</a></th>
 					
-					<th><a href="orders.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #24bfae;border-radius: 12px;font-size: 15px;">Orders</a></th>
+					<th><a href="orders.php" style="text-decoration: none;color: #040403;padding: 4px 12px;border-radius: 12px;font-size: 15px;">Orders</a></th>
 			
 					<?php 
 						if($utype_db == 'admin'){
@@ -82,24 +82,22 @@ else {
 		</div>
 		<div>
 			<table class="rightsidemenu">
-				<tr style="font-weight: bold;" colspan="10" bgcolor="#4DB849">
-					<th>Id</th>
-					<th>User Id</th>
-					<th>Product Id</th>
-					<th>Order Place</th>
-					<th>Mobile</th>
-					<th>Order Status</th>
-					<th>Order Date</th>
-					<th>Delevery Date</th>
-					<th>User Name</th>
-					<th>User Mobile</th>
-					<th>User Email</th>
-					<th>Edit</th>
+				<tr style="font-weight: bold;color:#fff;" colspan="10" bgcolor="#000">
+					<th width="10%">Id</th>
+					<th width="10%">Product Id</th>
+					<th width="20%">Order Place</th>
+					<th width="10%">Order Status</th>
+					<th width="20%">Order Date</th>
+					<th width="20%">User Name</th>
+					<th width="10%">User Mobile</th>
+					<th width="10%">User Email</th>
+					<th width="10%">Image</th>
 				</tr>
 				<tr>
 					<?php include ( "../inc/connect.inc.php");
 					$query = "SELECT * FROM orders ORDER BY id DESC";
 					$run = mysqli_query($con, $query);
+					$i=1;
 					while ($row=mysqli_fetch_assoc($run)) {
 						$oid = $row['id'];
 						$ouid = $row['uid'];
@@ -128,25 +126,22 @@ else {
 
 					
 					 ?>
-					<th><?php echo $oid; ?></th>
-					<th><?php echo $ouid; ?></th>
+					<th><?php echo $i; ?></th>
 					<th><?php echo $opid; ?></th>
-					<th><?php echo ''.$oquantity.' * '.$oprice.' = '.$oquantity*$oprice.''; ?></th>
 					<th><?php echo $oplace; ?></th>
-					<th><?php echo $omobile; ?></th>
 					<th><?php echo $odstatus; ?></th>
 					<th><?php echo $odate; ?></th>
-					<th><?php echo $ddate; ?></th>
 
 					<th><?php echo $ofname; ?></th>
 					<th><?php echo $oumobile; ?></th>
 					<th><?php echo $ouemail; ?></th>
-					<th><?php echo '<div class="home-prodlist-img"><a href="editorder.php?eoid='.$oid.'">
-									<img src="../image/product/'.$opitem.'/'.$oppicture.'" class="home-prodlist-imgi" style="height: 75px; width: 75px;">
-									</a>
+					<th><?php echo '<div class="home-prodlist-img">
+									<img src="../image/product/'.$oppicture.'" class="home-prodlist-imgi" style="height: 75px; width: 75px;">
+									
 								</div>' ?></th>
 				</tr>
-				<?php } ?>
+				<?php 
+			$i++;} ?>
 			</table>
 		</div>
 	</body>
