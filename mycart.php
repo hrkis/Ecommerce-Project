@@ -199,7 +199,7 @@ $del = $_POST['Delivery'];
 										$picture = $row1['picture'];
 										$item = $row1['item'];
 										$category = $row1['category'];
-										
+										/* This code is responsible for R01 to The initial offer will be “buy one red widget, get the second half price”.*/
 										if($pId==77 && $quantity>=2){
 											$final_price = ($price / 2) + (($quantity - 1) * $price);
 											$total += $final_price; // Add discounted total to the final total
@@ -207,6 +207,7 @@ $del = $_POST['Delivery'];
 											$total += ($quantity * $price);
 											
 										}
+										/*End of this code*/
 										//echo $total.'testcommit3';
 										$_SESSION['total'] = $total;
 										
@@ -228,6 +229,7 @@ $del = $_POST['Delivery'];
 									<th></th>
 									<th>
 								<?php 
+								/* This code is responsible To incentivise customers to spend more, delivery costs are reduced based on the amount spent. Orders under $50 cost $4.95. For orders under $90, delivery costs $2.95. Orders of $90 or more have free delivery.*/
 								if ($total >= 1 && $total < 50) {
 									echo 'Your delivery costs $4.95'.'<br>';
 									echo 'Total cost: $' . ($total + 4.95);
@@ -239,7 +241,8 @@ $del = $_POST['Delivery'];
 									echo 'Total cost: $' . $total;
 								} else {
 									echo '';
-								}?></th>
+								}
+								/*End of this code */?></th>
 									<th></th>
 									<th></th>
 									<th></th>
